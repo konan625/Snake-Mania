@@ -42,7 +42,7 @@ function isCollide(snake){
 }
 
 function gameengine(){
-    //bgsound.play();
+    bgsound.play();
     //part 1 : Updating the snake array
      if(isCollide(snakeArr)){
         gameoversound.play();
@@ -52,7 +52,7 @@ function gameengine(){
         snakeArr = [
             {x:13,y:15}
         ]
-        //bgsound.play();
+        bgsound.play();
         score = 0;//for new game
      }
 
