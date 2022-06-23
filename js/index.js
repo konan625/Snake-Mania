@@ -2,7 +2,7 @@
 let inputDir={x:0,y:0};//at start of game , snake is static at origin
 const foodsound=new Audio('assets/Eat.mp3');
 const gameoversound=new Audio('assets/Game over.mp3');
-const turnsound=new Audio('assets/Turn.mp3');
+//const turnsound=new Audio('assets/Turn.mp3');
 const  bgsound=new Audio('assets/bg.mp3');
 let speed = 5;
 let score = 0;
@@ -107,7 +107,7 @@ function gameengine(){
 window.requestAnimationFrame(main);
 window.addEventListener('keydown' , e=>{
     inputDir = {x:0,y:1} //Start the game
-    turnsound.play();
+    //turnsound.play();
     switch (e.key) {
         case "ArrowUp":
             console.log("ArrowUp")
